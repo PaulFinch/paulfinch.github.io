@@ -1,2 +1,15 @@
 title: "PaulFinch"
 url: "https://paulfinch.github.io"
+
+permalink: pretty
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll/tagging
+  
+paginate: 5
+paginate_path: "/page/:num"
+
+tag_page_dir:         tag
+tag_page_layout:      tag_page
+tag_permalink_style:  pretty
