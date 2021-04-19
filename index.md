@@ -1,3 +1,4 @@
 ---
-paulfinch.github.io
+layout: default
 ---
+paulfinch.github.io
