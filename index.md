@@ -13,9 +13,6 @@ paulfinch.github.io
 			{% endif %}
 		</div>
 	</div>
-</div>
-
-<div class="container">
 	<div class="row">
 	{% if site.posts.size > 0 %}
 		{% for post in paginator.posts %}
