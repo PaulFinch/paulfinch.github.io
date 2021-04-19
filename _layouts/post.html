@@ -8,15 +8,12 @@ layout: default
         <span class="post__date">
           <time datetime="{{ page.date | date_to_xmlschema }}">{{page.date | date: '%b %d, %Y'}}</time>
         </span>
-
         <h1 class="post-title">{{ page.title | escape }}</h1>
-
         <div class="post__info">
           <div class="post__author">
             <span>By</span>
             <a href="{{ site.baseurl }}/about/" class="author-name">{{site.data.settings.author.name}}</a>
           </div>
-
           {% if page.tags.size >= 1 %}
           <div class="post__tags">
             {% for tag in page.tags %}
@@ -28,7 +25,6 @@ layout: default
       </div>
     </div>
   </div>
-
   {% assign no-image = nil %}
   {% if page.image %}
     <div class="post__head">
@@ -37,5 +33,12 @@ layout: default
   {% else %}
     {% assign no-image = 'post-no-image' %}
   {% endif %}
-
   </div>
+
+  <div class="container">
+  <div class="row">
+    <article class="post {{ no-image }} col col-8 col-t-10 col-m-12">
+      <div class="post__content">{{ content }}</div>
+    </article>
+    </div>
+  </div
