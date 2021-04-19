@@ -4,6 +4,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
+  <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.settings.description }}{% endif %}'>
+  <meta prefix="go: http://ogp.me/ns#" property='og:title' content='{{ page.title }}'/>
+  <meta prefix="go: http://ogp.me/ns#" property='og:image' content='https://paulfinch.github.io/images/{{ page.image }}'/>
+  <meta prefix="go: http://ogp.me/ns#" property="og:site_name" content="PaulFinch">
+  <meta prefix="go: http://ogp.me/ns#" property='og:description' content='{{ page.summary }}'/>
+  <meta prefix="go: http://ogp.me/ns#" property="og:type" content="article">
+  <meta prefix="go: http://ogp.me/ns#" property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="icon" href="https://paulfinch.github.io/favicon.ico" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
