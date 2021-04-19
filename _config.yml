@@ -4,7 +4,6 @@ url: "https://paulfinch.github.io"
 permalink: pretty
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
   - jekyll/tagging
   
 paginate: 5
