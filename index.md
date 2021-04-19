@@ -8,7 +8,7 @@ paulfinch.github.io
 <div class="container">
 	{% if site.posts.size > 0 %}
 	<div class="row">
-		{% for post in paginator.posts %}
+		{% for post in site.posts %}
 			{% include article-content.html %}
 		{% endfor %}
 	</div>
