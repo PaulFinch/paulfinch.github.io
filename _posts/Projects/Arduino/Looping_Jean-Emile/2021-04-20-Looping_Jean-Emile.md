@@ -4,6 +4,7 @@ title:  "Looping Jean-Emile"
 date:   2021-04-20 10:00:00 +0200
 image: jean-emile.jpg
 tags:   arduino
+folder: Looping_Jean-Emile
 ---
 ## Introduction ##
 In Loopin' Louie, a battery-powered motor placed in the center of the table rotates a boom with a little plastic plane. Four radial arms lead out to the players' barns and the chickens they're trying to protect. Each barn has a little lever, which is used to knock the rotating plane away from your chickens and hopefully into someone else's. When only one player has chickens remaining, he or she wins the game.
@@ -14,7 +15,7 @@ I couldn't help myself to hack it with 2 awesome modes:
 
 <p align='center'><img src='https://raw.githubusercontent.com/PaulFinch/paulfinch.github.io/master/_posts/Projects/Arduino/Looping_Jean-Emile/Images/Looping.jpg' width='500'></p>
 
-![Looping](Images/Looping.jpg)
+![Looping]({{site.baseurl}}/assets/{{post.folder}}/Images/Looping.jpg)
 
 [Video](https://www.youtube.com/watch?v=b-XIl642PzY){:target="_blank" rel="noopener"}
 
