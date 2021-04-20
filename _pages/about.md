@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-image: default.jpg
+image: default.png
 ---
 
 Hi, my name is PaulFinch.
