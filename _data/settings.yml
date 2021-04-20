@@ -10,7 +10,7 @@ description: PaulFinch
 author:
   name: PaulFinch
   image: user.png
-  say-hello: Hello, I’m <strong>PaulFinch</strong>
+  say-hello: <strong>PaulFinch</strong>
   bio: <strong>System Engineer</strong> and <strong>Time Traveller</strong>.
 
 
