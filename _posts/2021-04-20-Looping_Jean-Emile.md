@@ -5,9 +5,6 @@ date:   2021-04-20 11:00:00 +0200
 image: jean-emile.jpg
 tags:   arduino 
 ---
-{{ site.github.url }}
-{{ site.baseurl }}
-
 ## Introduction ##
 In Loopin' Louie, a battery-powered motor placed in the center of the table rotates a boom with a little plastic plane. Four radial arms lead out to the players' barns and the chickens they're trying to protect. Each barn has a little lever, which is used to knock the rotating plane away from your chickens and hopefully into someone else's. When only one player has chickens remaining, he or she wins the game.
 
@@ -56,4 +53,4 @@ To monitor the speed, I used a 5V analog voltmeter. This analog panel meter meas
 I also designed a [PVC Enclosure]({{ site.baseurl }}/assets/{{ page.title | replace: " ", "_" }}/Enclosure/Enclosure.svg){:target="_blank" rel="noopener"} made via [Ponoko Services](https://www.ponoko.com){:target="_blank" rel="noopener"}.
 
 ## Code ##
-see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/assets/{{ page.title | replace: " ", "_" }}){:target="_blank" rel="noopener"}
+see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/assets/{{ page.title | replace: " ", "_" }}/Files){:target="_blank" rel="noopener"}
