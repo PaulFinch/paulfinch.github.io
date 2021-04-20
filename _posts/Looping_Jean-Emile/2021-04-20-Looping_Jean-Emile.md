@@ -59,5 +59,5 @@ see files [here]({{site.baseurl}}/assets/{{folder}}){:target="_blank" rel="noope
 
 ### The Program
 ```
-{% include_absolute {{site.baseurl}}/assets/{{folder}}/Files/Looping.ino %}
+{% include_relative ../assets/{{folder}}/Files/Looping.ino %}
 ```
