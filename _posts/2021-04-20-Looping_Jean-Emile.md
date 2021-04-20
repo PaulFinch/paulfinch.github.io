@@ -7,8 +7,6 @@ tags:   arduino
 ---
 {% assign folder = {{ site.baseurl }}/assets/{{ post.title | replace: "_", " " }} %}
 
-{{ folder }}
-
 ## Introduction ##
 In Loopin' Louie, a battery-powered motor placed in the center of the table rotates a boom with a little plastic plane. Four radial arms lead out to the players' barns and the chickens they're trying to protect. Each barn has a little lever, which is used to knock the rotating plane away from your chickens and hopefully into someone else's. When only one player has chickens remaining, he or she wins the game.
 
@@ -18,7 +16,7 @@ I couldn't help myself to hack it with 2 awesome modes:
 
 [Video](https://www.youtube.com/watch?v=b-XIl642PzY){:target="_blank" rel="noopener"}
 
-![Looping]({{ folder }}/Images/Looping.jpg)
+![Looping]({{ site.baseurl }}/assets/{{ post.title | replace: "_", " " }}/Images/Looping.jpg)
 
 ## Hardware ##
 ![L293D]({{ folder }}/Images/L293D.png)
