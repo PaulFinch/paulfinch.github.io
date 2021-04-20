@@ -43,7 +43,7 @@ To monitor the speed, I used a 5V analog voltmeter. This analog panel meter meas
 * Wires
 
 ## Wiring ##
-![Schematic]({{site.baseurl}}/assets/{{folder}}/Images/Schematic.png)
+![Schematic]({{site.baseurl}}/assets/{{folder}}/Fritzing/Schematic.png)
 
 * __The Power Switch__ : Classic on/off switch which closes the circuit (9V Input)
 * __The "Mode" Switch__ : Classic switch which closes the circuit from the dedicated Pin. It allows to select the Automatic or Manual Mode. No need for resistor here as I use the internal Pull Up (INPUT_PULLUP)</p>
@@ -56,3 +56,8 @@ I also designed a [PVC Enclosure]({{site.baseurl}}/assets/{{folder}}/Enclosure/E
 
 ## Code ##
 see files [here]({{site.baseurl}}/assets/{{folder}}){:target="_blank" rel="noopener"}
+
+### The Program
+```
+{% include_absolute {{site.baseurl}}/assets/{{folder}}/Files/Looping.ino %}
+```
