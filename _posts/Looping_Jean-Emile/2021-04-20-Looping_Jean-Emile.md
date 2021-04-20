@@ -16,7 +16,7 @@ I couldn't help myself to hack it with 2 awesome modes:
 
 [Video](https://www.youtube.com/watch?v=b-XIl642PzY){:target="_blank" rel="noopener"}
 
-![Looping]({{site.baseurl}}/assets/{{folder}}/Images/Looping.jpg)
+![Looping]({{site.baseurl}}/assets/{{post.title | replace: "_", " "}}/Images/Looping.jpg)
 
 ## Hardware ##
 ![L293D]({{site.baseurl}}/assets/{{folder}}/Images/L293D.png)
