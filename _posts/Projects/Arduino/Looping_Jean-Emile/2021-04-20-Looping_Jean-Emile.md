@@ -57,7 +57,3 @@ I also designed a [PVC Enclosure](https://github.com/PaulFinch/paulfinch.github.
 
 ## Code ##
 see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/_posts/Projects/Arduino/Looping_Jean-Emile/Files){:target="_blank" rel="noopener"}
-
-```
-{% include_relative Files/Looping.ino %}
-```
