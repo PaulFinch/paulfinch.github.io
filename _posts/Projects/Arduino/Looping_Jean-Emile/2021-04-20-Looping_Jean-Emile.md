@@ -3,7 +3,7 @@ layout: post
 title:  "Looping Jean-Emile"
 date:   2021-04-20 10:00:00 +0200
 image: jean-emile.jpg
-tags:   programming arduino
+tags:   arduino
 ---
 ## Introduction ##
 In Loopin' Louie, a battery-powered motor placed in the center of the table rotates a boom with a little plastic plane. Four radial arms lead out to the players' barns and the chickens they're trying to protect. Each barn has a little lever, which is used to knock the rotating plane away from your chickens and hopefully into someone else's. When only one player has chickens remaining, he or she wins the game.
@@ -29,8 +29,8 @@ To monitor the speed, I used a 5V analog voltmeter. This analog panel meter meas
 
 ### Parts ###
 * 1 x Looping Louie
-* 1 x L293D [Link](https://www.sparkfun.com/products/315){:target="_blank" rel="noopener"}
-* 1 x 5V Analog Voltmeter [Link](https://www.sparkfun.com/products/10285){:target="_blank" rel="noopener"}
+* 1 x L293D
+* 1 x 5V Analog Voltmeter
 * 2 x LEDs
 * 2 x Switches
 * 1 x Arduino Uno
@@ -55,7 +55,6 @@ I also designed a [PVC Enclosure](https://github.com/PaulFinch/paulfinch.github.
 ## Code ##
 see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/_posts/Projects/Arduino/Looping_Jean-Emile/files){:target="_blank" rel="noopener"}
 
-### The Engine
 ```
 {% include_relative files/Looping.ino %}
 ```
