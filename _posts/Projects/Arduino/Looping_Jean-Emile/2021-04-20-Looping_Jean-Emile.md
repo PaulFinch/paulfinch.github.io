@@ -14,6 +14,8 @@ I couldn't help myself to hack it with 2 awesome modes:
 
 <p align='center'><img src='https://raw.githubusercontent.com/PaulFinch/paulfinch.github.io/master/_posts/Projects/Arduino/Looping_Jean-Emile/Images/Looping.jpg' width='500'></p>
 
+![Looping](/Images/Looping.jpg)
+
 [Video](https://www.youtube.com/watch?v=b-XIl642PzY){:target="_blank" rel="noopener"}
 
 ## Hardware ##
