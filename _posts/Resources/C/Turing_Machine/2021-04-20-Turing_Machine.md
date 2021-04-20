@@ -12,7 +12,7 @@ A Turing machine is a mathematical model of computation that defines an abstract
 Written for Linux Environment.
 
 ## Code ##
-see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/_posts/Resources/C/Turing_Machine/files)
+see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/_posts/Resources/C/Turing_Machine/files){:target="_blank" rel="noopener"}
 
 ### The Engine
 ```
