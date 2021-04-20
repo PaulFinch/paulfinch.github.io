@@ -2,7 +2,6 @@
 layout: post
 title:  "Game Of Life"
 date:   2021-04-20 10:00:00 +0200
-image:  program.jpg
 tags:   programming c
 ---
 ## Description ##
