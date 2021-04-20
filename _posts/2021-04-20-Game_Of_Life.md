@@ -11,4 +11,4 @@ The Game of Life, also known simply as Life, is a cellular automaton devised by 
 Written for Windows Environment.
 
 ## Code ##
-see files [here]({{ site.baseurl }}/assets/{{ page.title | replace: " ", "_" }}){:target="_blank" rel="noopener"}
+see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/assets/{{ page.title | replace: " ", "_" }}){:target="_blank" rel="noopener"}
