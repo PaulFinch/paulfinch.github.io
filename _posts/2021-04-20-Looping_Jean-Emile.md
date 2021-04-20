@@ -56,8 +56,3 @@ I also designed a [PVC Enclosure]({{site.baseurl}}/assets/{{folder}}/Enclosure/E
 
 ## Code ##
 see files [here]({{site.baseurl}}/assets/{{folder}}){:target="_blank" rel="noopener"}
-
-### The Program
-```
-{% include_relative ../assets/{{folder}}/Files/Looping.ino %}
-```

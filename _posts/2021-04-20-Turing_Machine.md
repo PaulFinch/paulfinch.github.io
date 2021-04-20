@@ -12,18 +12,3 @@ Written for Linux Environment.
 
 ## Code ##
 see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/_posts/Resources/C/Turing_Machine/files){:target="_blank" rel="noopener"}
-
-### The Engine
-```
-{% include_relative files/Turing.cpp %}
-```
-
-### The Add 1 Operation
-```
-{% include_relative files/Add1.txt %}
-```
-
-### The Minus 1 Operation
-```
-{% include_relative files/Minus1.txt %}
-```
