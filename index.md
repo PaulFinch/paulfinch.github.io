@@ -3,8 +3,6 @@ title: PaulFinch
 layout: default
 description: Paperstreet & Co
 ---
-# paulfinch.github.io
-
 <div class="container">
 	<div class="row">
 	{% if site.posts.size > 0 %}
