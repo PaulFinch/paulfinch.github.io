@@ -55,4 +55,4 @@ To monitor the speed, I used a 5V analog voltmeter. This analog panel meter meas
 I also designed a [PVC Enclosure]({{site.baseurl}}/assets/{{folder}}/Enclosure/Enclosure.svg){:target="_blank" rel="noopener"} made via [Ponoko Services](https://www.ponoko.com){:target="_blank" rel="noopener"}.
 
 ## Code ##
-see files [here]({{site.baseurl}}/assets/{{folder}}/Files){:target="_blank" rel="noopener"}
+see files [here]({{site.baseurl}}/assets/{{folder}}){:target="_blank" rel="noopener"}
