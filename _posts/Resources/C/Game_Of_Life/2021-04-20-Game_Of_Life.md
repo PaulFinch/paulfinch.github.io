@@ -12,10 +12,12 @@ The Game of Life, also known simply as Life, is a cellular automaton devised by 
 Written for Linux Environment.
 
 ## Code ##
+### The Engine
 ```C
 {% include_relative files/GameOfLife.c %}
 ```
 
+### The Universe
 ```
 {% include_relative files/Universe.txt %}
 ```
