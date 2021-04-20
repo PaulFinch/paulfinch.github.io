@@ -12,6 +12,8 @@ The Game of Life, also known simply as Life, is a cellular automaton devised by 
 Written for Windows Environment.
 
 ## Code ##
+see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/_posts/Resources/C/Game_Of_Life/files){:target="_blank" rel="noopener"}
+
 ### The Engine
 ```C
 {% include_relative files/GameOfLife.c %}
