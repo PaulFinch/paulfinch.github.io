@@ -14,20 +14,18 @@ I couldn't help myself to hack it with 2 awesome modes:
 * __Manual__ : Change the rotation speed manually with the potentiometer
 * __Auto__ : Randomly change the rotation speed, including reverse ^^
 
-<p align='center'><img src='https://raw.githubusercontent.com/PaulFinch/paulfinch.github.io/master/_posts/Projects/Arduino/Looping_Jean-Emile/Images/Looping.jpg' width='500'></p>
+[Video](https://www.youtube.com/watch?v=b-XIl642PzY){:target="_blank" rel="noopener"}
 
 ![Looping]({{site.baseurl}}/assets/{{folder}}/Images/Looping.jpg)
 
-[Video](https://www.youtube.com/watch?v=b-XIl642PzY){:target="_blank" rel="noopener"}
-
 ## Hardware ##
-<p align='center'><img src='https://raw.githubusercontent.com/PaulFinch/paulfinch.github.io/master/_posts/Projects/Arduino/Looping_Jean-Emile/Images/L293D.png' width='250'></p>
+![L293D]({{site.baseurl}}/assets/{{folder}}/Images/L293D.png)
 
 The Dual H-Bridge L293D contains two full H-bridges (four half H-bridges). That means you can drive four solenoids, two DC motors bi-directionally, or one stepper motor. The perfect Chip to control the motor's speed.
 
 Those chips are good for under 600 mA since that's the limit of this chip. They do handle a peak of 1.2A but that's just for a short amount of time. They run at 5V logic, Good for motor voltages from 4.5V up to 36V. The motor voltage is separate from the logic voltage. [Datasheet](https://www.sparkfun.com/datasheets/IC/SN754410.pdf){:target="_blank" rel="noopener"}
 
-<p align='center'><img src='https://raw.githubusercontent.com/PaulFinch/paulfinch.github.io/master/_posts/Projects/Arduino/Looping_Jean-Emile/Images/Voltmeter.jpg' width='250'></p>
+![Voltmeter]({{site.baseurl}}/assets/{{folder}}/Images/Voltmeter.jpg)
 
 To monitor the speed, I used a 5V analog voltmeter. This analog panel meter measures DC voltage from 0-5 volts with 2.5% accuracy.
 
@@ -45,7 +43,7 @@ To monitor the speed, I used a 5V analog voltmeter. This analog panel meter meas
 * Wires
 
 ## Wiring ##
-<p align='center'><img src='https://raw.githubusercontent.com/PaulFinch/paulfinch.github.io/master/_posts/Projects/Arduino/Looping_Jean-Emile/Fritzing/Schematic.png' width='500'></p>
+![Schematic]({{site.baseurl}}/assets/{{folder}}/Images/Schematic.png)
 
 * __The Power Switch__ : Classic on/off switch which closes the circuit (9V Input)
 * __The "Mode" Switch__ : Classic switch which closes the circuit from the dedicated Pin. It allows to select the Automatic or Manual Mode. No need for resistor here as I use the internal Pull Up (INPUT_PULLUP)</p>
@@ -54,7 +52,7 @@ To monitor the speed, I used a 5V analog voltmeter. This analog panel meter meas
 * __The Monitor__ : The Monitor displays the value from the dedicated Pin (0 to 5V)
 
 ## Enclosure ##
-I also designed a [PVC Enclosure](https://github.com/PaulFinch/paulfinch.github.io/blob/master/_posts/Projects/Arduino/Looping_Jean-Emile/Enclosure/Enclosure.svg){:target="_blank" rel="noopener"} made via [Ponoko Services](https://www.ponoko.com){:target="_blank" rel="noopener"}.
+I also designed a [PVC Enclosure]({{site.baseurl}}/assets/{{folder}}/Enclosure/Enclosure.svg){:target="_blank" rel="noopener"} made via [Ponoko Services](https://www.ponoko.com){:target="_blank" rel="noopener"}.
 
 ## Code ##
-see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/_posts/Projects/Arduino/Looping_Jean-Emile/Files){:target="_blank" rel="noopener"}
+see files [here]({{site.baseurl}}/assets/{{folder}}/Files){:target="_blank" rel="noopener"}
