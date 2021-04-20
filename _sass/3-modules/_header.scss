@@ -28,6 +28,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  
   //transform: translateY(-50%);
   
   .logo__link {
@@ -43,6 +44,7 @@
   
   .logo__image {
     max-height: 136px;
+    filter: blur(1px);
   }
 }
 
