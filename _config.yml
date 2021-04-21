@@ -2,6 +2,8 @@ url: "https://paulfinch.github.io"
 baseurl: "/"
 repository:  "paulfinch/paulfinch.github.io"
 
+excerpt_separator: "<!--more-->"
+
 # Build settings
 markdown: kramdown
 permalink: pretty

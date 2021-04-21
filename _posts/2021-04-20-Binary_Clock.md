@@ -3,7 +3,6 @@ layout: post
 title:  "Binary Clock"
 date:   2021-04-20 10:00:00 +0200
 tags:   javascript
-excerpt_separator: "<!--more-->"
 ---
 {% capture folder %}
 {{ page.title | replace: " ", "_" }}
