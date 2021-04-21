@@ -1,5 +1,5 @@
 url: "https://paulfinch.github.io"
-
+theme: minimal-mistakes-jekyll
 
 # Build settings
 markdown: kramdown
