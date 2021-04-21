@@ -11,6 +11,7 @@ tags:   raspberrypi
 
 ## Introduction ##
 The Orange Radio is a project I made from an Orange Miniamp (Have a look to the Project page)
+<!--more-->
 
 I decided to rework the project:
 1. I used Volumio for a long time, but the whole system is quite heavy and not very customizable.

@@ -8,7 +8,10 @@ tags:   linux
 {{ page.title | replace: " ", "_" }}
 {% endcapture %}
 
-## How to run a script or executable file as a service ##
+## Introduction ##
+How to run a script or executable file as a service
+<!--more-->
+
 First, create a service unit by creating this file : `/lib/systemd/system/xxx.service` (Most of OS)
 
 Then, enable the service :

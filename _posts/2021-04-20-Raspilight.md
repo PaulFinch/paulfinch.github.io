@@ -11,6 +11,7 @@ tags:   raspberrypi
 
 ## Introduction ##
 This is a script I made to turn the Pimoroni Unicorn Phat to an Ambient Light for the Raspberry Pi.
+<!--more-->
 
 ![Unicorn]({{ site.url }}/assets/{{ folder }}/Images/Unicorn.jpg)
 

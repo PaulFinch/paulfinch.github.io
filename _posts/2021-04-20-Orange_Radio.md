@@ -11,6 +11,7 @@ tags:   raspberrypi
 
 ## Introduction ##
 The Orange Radio is a Raspberry Pi Radio made from an Orange Miniamp
+<!--more-->
 
 [<img src='https://img.youtube.com/vi/rGPyn7Ue5Fc/0.jpg'>](https://www.youtube.com/watch?v=rGPyn7Ue5Fc){:target="_blank" rel="noopener"}
 
