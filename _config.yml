@@ -6,14 +6,14 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 theme                    : "minimal-mistakes-jekyll"
-minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "PaulFinch"
 title_separator          : "-"
 subtitle                 : "Development Test Site"
-name                     : "Your Name"
+name                     : "PaulFinch"
 description              : "Minimal Mistakes theme test."
 url                      : "https://paulfinch.github.io"
 baseurl                  : "/"
@@ -63,7 +63,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/bio-photo.jpg"
+og_image                 : "/images/user.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -82,8 +82,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "/assets/images/bio-photo.jpg"
+  name             : "PaulFinch"
+  avatar           : "/images/user.png"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
   links:
