@@ -16,7 +16,7 @@ I couldn't help myself to hack it with 2 awesome modes:
 * __Manual__ : Change the rotation speed manually with the potentiometer
 * __Auto__ : Randomly change the rotation speed, including reverse ^^
 
-[Video](https://www.youtube.com/watch?v=b-XIl642PzY){:target="_blank" rel="noopener"}
+[<img src='https://img.youtube.com/vi/b-XIl642PzY/0.jpg'>](https://www.youtube.com/watch?v=b-XIl642PzY){:target="_blank" rel="noopener"}
 
 ![Looping]({{ site.baseurl }}/assets/{{ folder }}/Images/Looping.jpg)
 
