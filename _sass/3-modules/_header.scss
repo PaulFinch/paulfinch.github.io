@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  height: 200px;
+  height: 150px;
 
   .header__overlay {
     position: fixed;
@@ -28,7 +28,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(25%);
+  transform: translateY(10%);
   
   .logo__link {
     font-size: 30px;
