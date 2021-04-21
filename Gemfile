@@ -1,6 +1,7 @@
-source "https://rubygems.org"
-
+source 'https://rubygems.org'
+gem "bundler"
+gem "jekyll"
+gem "jekyll-paginate"
+gem 'jekyll-tagging'
+gem "jekyll-sitemap"
 gem "minimal-mistakes-jekyll"
-group :jekyll_plugins do
-  gem 'jekyll-algolia', '~> 1.0'
-end
