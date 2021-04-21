@@ -22,8 +22,7 @@ Basically, the script takes a screenshot with raspi2png [Link]('https://github.c
 For each zone, the screenshot is cropped to its coordinates, and the dominant color is then calculated.
 This way, a list is built with each LED coordinates / color (RGB). 
 
-For this script, you'll need of course a Primoroni Unicorn Phat [Link]('https://shop.pimoroni.com/products/unicorn-phat'){:target="_blank" rel="noopener"} and to install the Unicorn Library with the pimoroni-dashboard or with :
-`curl -sS https://get.pimoroni.com/unicornhat | bash`
+For this script, you'll need of course a Primoroni Unicorn Phat [Link]('https://shop.pimoroni.com/products/unicorn-phat'){:target="_blank" rel="noopener"} and to install the Unicorn Library with the pimoroni-dashboard or with : `curl -sS https://get.pimoroni.com/unicornhat | bash`
 
 ## Run as a Service ##
 To run this script as a service, check Resource : `Run_as_a_Service`

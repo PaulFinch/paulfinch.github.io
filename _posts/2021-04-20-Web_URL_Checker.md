@@ -13,8 +13,7 @@ This is a little script I made to check if Volumio's Web Interface is ready by l
 <!--more-->
 
 ## Run the Script ##
-Run the script : 
-> `sudo python check_volumio.py`
+Run the script : `sudo python check_volumio.py`
 
 ## Run as a Service ##
 To run this script as a service, check Resource : `Run_as_a_Service`
