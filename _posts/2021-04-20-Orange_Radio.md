@@ -81,6 +81,3 @@ I also added Two LEDs and 1 Button :
 * __LED 2__ : Indicates if the Volumio Application is Started and Ready. For this I made a __Python Script__ to check if the web interface is ready (Check Web_URL_Checker).
 
 ![Schematic]({{ site.baseurl }}/assets/{{ folder }}/Fritzing/Schematic_Led.png)
-
-## Code ##
-see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/assets/{{ folder }}/Files){:target="_blank" rel="noopener"}
