@@ -57,7 +57,7 @@ I also rewired the buttons to 3V (with resistors). When the circuit is opened, t
 
 Tip: Sometimes, you could be tempted to avoid adding resistors (like I did), just don't. 
 
-![Schematic]({{ site.baseurl }}/assets/{{ folder }}/Fritzing/Schematic_Led.png)
+![Schematic]({{ site.url }}/assets/{{ folder }}/Fritzing/Schematic_Led.png)
 
 ## Code ##
 see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/assets/{{ folder }}/Files){:target="_blank" rel="noopener"}

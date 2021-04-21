@@ -12,9 +12,9 @@ tags:   raspberrypi
 ## Introduction ##
 This is a script I made to turn the Pimoroni Unicorn Phat to an Ambient Light for the Raspberry Pi.
 
-![Unicorn]({{ site.baseurl }}/assets/{{ folder }}/Images/Unicorn.jpg)
+![Unicorn]({{ site.url }}/assets/{{ folder }}/Images/Unicorn.jpg)
 
-![Mario]({{ site.baseurl }}/assets/{{ folder }}/Images/Mario.jpg)
+![Mario]({{ site.url }}/assets/{{ folder }}/Images/Mario.jpg)
 
 Basically, the script takes a screenshot with raspi2png [Link]('https://github.com/AndrewFromMelbourne/raspi2png'){:target="_blank" rel="noopener"}, then divides it into 4x8 zones.
 
