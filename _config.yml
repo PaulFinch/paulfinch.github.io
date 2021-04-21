@@ -10,13 +10,13 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Minimal Mistakes"
+title                    : "PaulFinch"
 title_separator          : "-"
 subtitle                 : "Development Test Site"
 name                     : "Your Name"
 description              : "Minimal Mistakes theme test."
 url                      : "https://paulfinch.github.io"
-baseurl                  : "/"
+baseurl                  : "https://paulfinch.github.io"
 repository               : "paulfinch/paulfinch.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -110,9 +110,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
 
 
 # Reading Files
