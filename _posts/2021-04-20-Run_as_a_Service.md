@@ -20,4 +20,4 @@ If you modified the service file, issue this command to take modifications in ac
 * `systemctl daemon-reload xxx.service`
 
 ## Code ##
-see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/assets/{{ folder }}/Files){:target="_blank" rel="noopener"}
+see files [here](https://github.com/{{ site.repository }}/tree/main/assets/{{ folder }}/Files){:target="_blank" rel="noopener"}

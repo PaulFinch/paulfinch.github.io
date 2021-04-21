@@ -28,4 +28,4 @@ For this script, you'll need of course a Primoroni Unicorn Phat [Link]('https://
 To run this script as a service, check Resource : `Run_as_a_Service`
 
 ## Code ##
-see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/assets/{{ folder }}/Files){:target="_blank" rel="noopener"}
+see files [here](https://github.com/{{ site.repository }}/tree/main/assets/{{ folder }}/Files){:target="_blank" rel="noopener"}

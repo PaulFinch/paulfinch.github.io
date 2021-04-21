@@ -60,4 +60,4 @@ Tip: Sometimes, you could be tempted to avoid adding resistors (like I did), jus
 ![Schematic]({{ site.url }}/assets/{{ folder }}/Fritzing/Schematic_Led.png)
 
 ## Code ##
-see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/assets/{{ folder }}/Files){:target="_blank" rel="noopener"}
+see files [here](https://github.com/{{ site.repository }}/tree/main/assets/{{ folder }}/Files){:target="_blank" rel="noopener"}
