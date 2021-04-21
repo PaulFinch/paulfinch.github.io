@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Piglow_Temp_Checker"
+title:  "Piglow Temp Checker"
 date:   2021-04-20 12:00:00 +0200
 tags:   raspberrypi 
 ---
