@@ -26,10 +26,9 @@
 
 .logo {
   position: absolute;
-  top: 50;
+  top: 0;
   left: 0;
-  
-  //transform: translateY(-50%);
+  transform: translateY(-50%);
   
   .logo__link {
     font-size: 30px;
