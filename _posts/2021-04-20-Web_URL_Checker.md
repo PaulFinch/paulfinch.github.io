@@ -2,7 +2,7 @@
 layout: post
 title:  "Web URL Checker"
 date:   2021-04-20 12:00:00 +0200
-tags:   raspberrypi 
+tags:   python 
 ---
 {% capture folder %}
 {{ page.title | replace: " ", "_" }}

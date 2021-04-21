@@ -3,7 +3,7 @@ layout: post
 title:  "Raspilight"
 date:   2021-04-20 11:00:00 +0200
 image: raspi-light.jpg
-tags:   raspberrypi
+tags:   raspberrypi python
 ---
 {% capture folder %}
 {{ page.title | replace: " ", "_" }}

@@ -17,7 +17,7 @@ When Temperature is OK (<=60), Green lights glow for a second.
 When Temperature is critical (>60), LED cycles notify the situation, then orange or red lights stay on (depending on the temperature)
 
 ## Prerequisites ##
-* Pimoroni Piglow [Link]('https://shop.pimoroni.com/products/piglow')
+* Pimoroni Piglow
 * File : piglow.py (or pip install piglow)</li>
 * File : sn3218.py (or pip install sn3218)</li>
 

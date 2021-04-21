@@ -2,7 +2,7 @@
 layout: post
 title:  "Run as a Service"
 date:   2021-04-20 10:00:00 +0200
-tags:   linux
+tags:   linux raspberrypi
 ---
 {% capture folder %}
 {{ page.title | replace: " ", "_" }}
