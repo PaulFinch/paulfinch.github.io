@@ -12,7 +12,7 @@ tags:   raspberrypi
 ## Introduction ##
 The Orange Radio is a Raspberry Pi Radio made from an Orange Miniamp
 
-<img src='https://img.youtube.com/vi/rGPyn7Ue5Fc/0.jpg'></p>](https://www.youtube.com/watch?v=rGPyn7Ue5Fc)
+[<img src='https://img.youtube.com/vi/rGPyn7Ue5Fc/0.jpg'>](https://www.youtube.com/watch?v=rGPyn7Ue5Fc){:target="_blank" rel="noopener"}
 
 For this project, I chose the __Orange CR6S Amp__ for the enclosure, this amp is quite cheap and has a f***** english retro style. Of course, you can build your own 3D printed enclosure, or take an old Radio...
 
