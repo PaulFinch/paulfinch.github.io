@@ -25,8 +25,7 @@ For this script, you'll need of course a Primoroni Unicorn Phat [Link]('https://
 `curl -sS https://get.pimoroni.com/unicornhat | bash`
 
 ## Run as a Service ##
-To run this script as a service, check Resource :
-> `Run_as_a_Service`
+To run this script as a service, check Resource : `Run_as_a_Service`
 
 ## Code ##
 see files [here](https://github.com/PaulFinch/paulfinch.github.io/tree/main/assets/{{ folder }}/Files){:target="_blank" rel="noopener"}
