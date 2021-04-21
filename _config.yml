@@ -1,5 +1,6 @@
 url: "https://paulfinch.github.io"
 baseurl: "/"
+repository:  "paulfinch/paulfinch.github.io"
 
 # Build settings
 markdown: kramdown
