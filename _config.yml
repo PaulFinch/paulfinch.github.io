@@ -1,5 +1,5 @@
 #baseurl: "/"
-url: "https://paulfinch.github.io/"
+url: "https://paulfinch.github.io"
 repository:  "paulfinch/paulfinch.github.io"
 
 excerpt_separator: "<!--more-->"
