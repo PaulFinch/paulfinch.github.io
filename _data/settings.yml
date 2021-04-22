@@ -2,7 +2,7 @@
 # General Site Settings
 title: PaulFinch
 logo: logo.png
-description: PaulFinch
+description: PaulFinch Toolbox
 
 
 #-------------------------------
@@ -10,7 +10,7 @@ description: PaulFinch
 author:
   name: PaulFinch
   #image: user.png
-  say-hello: <strong>PaulFinch</strong>
+  say-hello: Hi, I'm <strong>PaulFinch</strong>
   bio: <strong>System Engineer</strong> and <strong>Time Traveller</strong>.
 
 
