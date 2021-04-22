@@ -147,8 +147,8 @@
       color: $black;
     }
     
-    //@media only screen and (max-width: $desktop) {
+    @media only screen {
       display: inline-block;
-   // }
+   }
   }
 }
