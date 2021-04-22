@@ -9,7 +9,7 @@ description: PaulFinch Toolbox
 # Author Settings
 author:
   name: PaulFinch
-  #image: user.png
+  image: user.png
   say-hello: Hi, I'm <strong>PaulFinch</strong>
   bio: <strong>System Engineer</strong> and <strong>Time Traveller</strong>.
 
