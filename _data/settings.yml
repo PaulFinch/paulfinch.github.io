@@ -11,11 +11,13 @@ author:
   name: PaulFinch
   image: user.png
   say-hello: Hi, I'm <strong>PaulFinch</strong>
-  bio: <strong>System Engineer</strong> and <strong>Time Traveller</strong>.
+  bio: <strong>[ System Engineer ]</strong> && <strong>[ Time Traveller ]</strong>.
 
 
 #-------------------------------
 # Contact links
+twitter: https://twitter.com/_PaulFinch_
+github: https://github.com/paulfinch/
 #twitter: https://twitter.com/ # Add your Twitter handle
 #facebook: https://facebook.com/ # Add your Facebook handle
 #dribbble: https://dribbble.com/ # Add your Dribbble handle
