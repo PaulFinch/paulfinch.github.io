@@ -20,6 +20,12 @@ layout: default
               <a href="{{ site.baseurl }}/tag/{{ tag }}" class="post__tags-tag">{{ tag }}</a>
             {% endfor %}
           </div>
+          {% if page.categories.size >= 1 %}
+          <div class="post__tags">
+            {% for category in page.categories %}
+              {{ category }}
+            {% endfor %}
+          </div>
           {% endif %}
         </div>
       </div>
