@@ -21,13 +21,6 @@ layout: default
             {% endfor %}
           </div>
           {% endif %}
-          {% if page.categories.size >= 1 %}
-          <div class="post__tags">
-            {% for category in page.categories %}
-              <a href="{{ site.baseurl }}/category/{{ category }}" class="post__tags-tag">{{ category }}</a>
-            {% endfor %}
-          </div>
-          {% endif %}
         </div>
       </div>
     </div>
