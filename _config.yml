@@ -36,5 +36,5 @@ tag_page_layout:      tag_page
 tag_permalink_style:  pretty
 
 # Categories
-category_dir: "categorie"
+category_dir: "category"
 category_layout: category_page.html
