@@ -11,7 +11,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll/tagging
-  - jekyll-category-pages
+  - jekyll-paginate-category
 
 paginate: 5
 paginate_path: "/page/:num"
@@ -36,4 +36,5 @@ tag_page_layout:      tag_page
 tag_permalink_style:  pretty
 
 # Categories
+category_dir: "categorie"
 category_layout: category_page.html
