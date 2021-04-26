@@ -20,7 +20,7 @@ sass:
 collections:
   category:
     output: true
-    permalink: /:collection/:name/index.html
+    permalink: /:collection/:name
 
 defaults:
   - scope:
