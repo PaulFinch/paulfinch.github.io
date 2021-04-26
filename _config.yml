@@ -36,3 +36,6 @@ tag_permalink_style:  pretty
 sass:
   sass_dir: _sass
   style: compressed
+
+# Categories
+category_layout: category_page
