@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Run as a Service"
-date:   2021-04-20 10:00:00 +0200
+category: Tips
 tags:   linux raspberrypi
 ---
 {% capture folder %}
@@ -12,7 +12,9 @@ tags:   linux raspberrypi
 How to run a script or executable file as a service
 <!--more-->
 
-First, create a service unit by creating this file : `/lib/systemd/system/xxx.service` (Most of OS)
+First, create a service unit by creating this file : 
+
+`/lib/systemd/system/xxx.service` (Most of OS)
 
 Then, enable the service :
 * `chmod 644 xxx.service`

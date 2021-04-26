@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Looping Jean-Emile"
-date:   2021-04-20 11:00:00 +0200
+category: Projects
 image: jean-emile.jpg
 tags:   arduino 
 ---

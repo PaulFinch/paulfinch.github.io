@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Telegram Bot"
-date:   2021-04-20 12:00:00 +0200
+category: Projects
 tags:   python 
 ---
 {% capture folder %}
@@ -13,7 +13,8 @@ This is a script I made to create a Telegram Bot. This one gives random text or 
 <!--more-->
 
 The telegram-bot Library is required, install it first:
-> `pip install python-telegram-bot --upgrade`
+
+`pip install python-telegram-bot --upgrade`
 
 ## Create the Bot ##
 There's a bot dedicated to create new bots. Just talk to BotFather and ask him to create a Bot: `/newbot`
@@ -27,11 +28,13 @@ Follow the few next steps, once you've created the Bot you'll receive your autho
 
 ## Run the Script ##
 Run the script : 
-> `python bot.py`
+
+`python bot.py`
 
 In Telegram, talk to the bot or invite him in a chat room, the Bot will respond to these key commands :
-> `/send_text`
-> `/send_picture`
+
+`/send_text`
+`/send_picture`
 
 ## Run as a Service ##
 To run this script as a service, check Resource : `Run_as_a_Service`

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PreConfigure SDCard"
-date:   2021-04-20 12:00:00 +0200
+category: Tips
 tags:   raspberrypi 
 ---
 {% capture folder %}

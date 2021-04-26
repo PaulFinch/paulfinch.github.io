@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Binary Clock"
-date:   2021-04-20 10:00:00 +0200
+category: Programs
 tags:   javascript
 ---
 {% capture folder %}
