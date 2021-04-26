@@ -31,9 +31,9 @@
                   {% endif %}
                 {% endunless %}
               {% endfor %}
-              {% for cat in site.categories %}
+              {% for category in site.categories %}
               <li class="nav__item">
-                <a href="{{ page.url | prepend: site.baseurl }}" class="nav__link">{{ cat }}</a>
+                <a href="/category/{{ category }}" class="nav__link">{{ category }}</a>
               </li>
               {% endfor %}
             </ul>
