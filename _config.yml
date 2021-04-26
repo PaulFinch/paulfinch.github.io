@@ -1,10 +1,8 @@
-#baseurl: "/"
 url: "https://paulfinch.github.io"
 repository:  "paulfinch/paulfinch.github.io"
 
 excerpt_separator: "<!--more-->"
 
-# Build settings
 markdown: kramdown
 permalink: pretty
 plugins:
@@ -19,11 +17,6 @@ sass:
   sass_dir: _sass
   style: compressed
 
-collections:
-  category:
-    output: true
-
-# Pages Path
 defaults:
   - scope:
       path: '_pages'
@@ -35,10 +28,14 @@ defaults:
     values:
       layout: "category_page"
 
+collections:
+  category:
+    output: true
+    permalink: /:collection/:name/index.html
+
 include:
   - _pages
 
-# Tags
 tag_page_dir:         tag
 tag_page_layout:      tag_page
 tag_permalink_style:  pretty
