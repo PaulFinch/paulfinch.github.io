@@ -34,7 +34,7 @@ defaults:
       path: ""
       type: category
     values:
-      layout: "category"
+      layout: "category_page"
 
 include:
   - _pages
