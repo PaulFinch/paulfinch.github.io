@@ -16,6 +16,9 @@ plugins:
 paginate: 5
 paginate_path: "/page/:num"
 
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Pages Path
 defaults:
@@ -27,15 +30,10 @@ defaults:
 include:
   - _pages
 
-
 # Tags
 tag_page_dir:         tag
 tag_page_layout:      tag_page
 tag_permalink_style:  pretty
-
-sass:
-  sass_dir: _sass
-  style: compressed
 
 # Categories
 category_layout: category_page.html
