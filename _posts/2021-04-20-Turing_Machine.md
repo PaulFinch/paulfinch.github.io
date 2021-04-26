@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Turing Machine"
-category: Programs
+category: programs
 tags:   c
 ---
 {% capture folder %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Web URL Checker"
-category: Programs
+category: programs
 tags:   python 
 ---
 {% capture folder %}

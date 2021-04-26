@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Game Of Life"
-category: Programs
+category: programs
 tags:   c
 ---
 {% capture folder %}

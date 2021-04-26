@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Run as a Service"
-category: Tips
+category: tips
 tags:   linux raspberrypi
 ---
 {% capture folder %}

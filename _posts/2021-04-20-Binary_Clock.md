@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Binary Clock"
-category: Programs
+category: programs
 tags:   javascript
 ---
 {% capture folder %}

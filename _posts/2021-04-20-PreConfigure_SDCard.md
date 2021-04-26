@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PreConfigure SDCard"
-category: Tips
+category: tips
 tags:   raspberrypi 
 ---
 {% capture folder %}
