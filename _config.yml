@@ -38,4 +38,4 @@ sass:
   style: compressed
 
 # Categories
-category_layout: category_page
+category_layout: category_page.html
