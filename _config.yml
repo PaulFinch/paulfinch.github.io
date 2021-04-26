@@ -17,6 +17,11 @@ sass:
   sass_dir: _sass
   style: compressed
 
+collections:
+  category:
+    output: true
+    permalink: /:collection/:name/index.html
+
 defaults:
   - scope:
       path: '_pages'
@@ -27,11 +32,6 @@ defaults:
       type: category
     values:
       layout: "category_page"
-
-collections:
-  category:
-    output: true
-    permalink: /:collection/:name/index.html
 
 include:
   - _pages
