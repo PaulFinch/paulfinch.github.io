@@ -20,12 +20,21 @@ sass:
   sass_dir: _sass
   style: compressed
 
+collections:
+  category:
+    output: true
+
 # Pages Path
 defaults:
   - scope:
       path: '_pages'
     values:
       permalink: /:basename:output_ext
+  - scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
 
 include:
   - _pages
@@ -34,7 +43,3 @@ include:
 tag_page_dir:         tag
 tag_page_layout:      tag_page
 tag_permalink_style:  pretty
-
-# Categories
-category_dir: "category"
-category_layout: category_page.html
