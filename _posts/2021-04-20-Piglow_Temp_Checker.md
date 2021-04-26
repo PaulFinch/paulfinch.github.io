@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Piglow Temp Checker"
-categories: projects
+category: projects
 tags:   raspberrypi 
 ---
 {% capture folder %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Looping Jean-Emile"
-categories: projects
+category: projects
 image: jean-emile.jpg
 tags:   arduino 
 ---
