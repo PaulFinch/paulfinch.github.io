@@ -17,12 +17,21 @@ sass:
   sass_dir: _sass
   style: compressed
 
+collections:
+  category:
+    output: true
+    permalink: /:collection/:name/index.html
 
 defaults:
   - scope:
       path: '_pages'
     values:
       permalink: /:basename:output_ext
+  - scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
 
 include:
   - _pages
