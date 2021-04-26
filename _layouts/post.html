@@ -24,7 +24,7 @@ layout: default
           {% if page.categories.size >= 1 %}
           <div class="post__tags">
             {% for category in page.categories %}
-              <a href="{{ site.baseurl }}/category/{{ category | first | slugify }}" class="post__tags-tag">{{ category | first }}</a>
+              <a href="{{ site.baseurl }}/category/{{ category }}" class="post__tags-tag">{{ category }}</a>
             {% endfor %}
           </div>
           {% endif %}
