@@ -11,7 +11,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll/tagging
-  - jekyll-paginate-category
 
 paginate: 5
 paginate_path: "/page/:num"
