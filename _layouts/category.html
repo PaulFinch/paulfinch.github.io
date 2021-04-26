@@ -3,10 +3,10 @@ layout: default
 ---
 <div class="arhive-head">
   <div class="container">
-    <h1 class="archive-title">Category: <span>{{ page.category }}</span></h1>
+    <h1 class="archive-title">Category: <span>{{ page.category_name }}</span></h1>
   </div>
 </div>
 
-{% for post in page.posts %}
+{% for post in site.categories[page.category_name] %}
   {% include article-content.html %}
 {% endfor %}
