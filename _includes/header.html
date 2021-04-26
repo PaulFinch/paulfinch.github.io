@@ -31,7 +31,11 @@
                   {% endif %}
                 {% endunless %}
               {% endfor %}
-
+              {% for cat in site.categories %}
+              <li class="nav__item">
+                <a href="{{ page.url | prepend: site.baseurl }}" class="nav__link">{{ cat }}</a>
+              </li>
+              {% endfor %}
             </ul>
           </div>
         </nav>
