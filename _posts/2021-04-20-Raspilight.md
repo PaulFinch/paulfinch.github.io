@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Raspilight"
-category: projects
+categories: projects
 image: raspi-light.jpg
 tags:   raspberrypi python
 ---

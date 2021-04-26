@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Telegram Bot"
-category: projects
+categories: projects
 tags:   python 
 ---
 {% capture folder %}

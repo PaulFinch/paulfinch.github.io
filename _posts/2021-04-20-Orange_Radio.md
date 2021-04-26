@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Orange Radio"
-category: projects
+categories: projects
 image:  orange.jpg
 tags:   raspberrypi 
 ---

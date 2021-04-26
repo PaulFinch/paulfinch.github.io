@@ -20,18 +20,13 @@ sass:
 collections:
   category:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name/index.html
 
 defaults:
   - scope:
       path: '_pages'
     values:
       permalink: /:basename:output_ext
-  - scope:
-      path: ""
-      type: category
-    values:
-      layout: "category_page"
 
 include:
   - _pages
