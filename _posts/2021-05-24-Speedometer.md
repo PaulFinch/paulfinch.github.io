@@ -13,6 +13,8 @@ tags: arduino
 This Bike Speedometer tracks my cycling activies. It was made from a Arduino Esplora.
 <!--more-->
 
+![Speedometer]({{ site.url }}/assets/{{ folder }}/Images/Speedometer.jpg)
+
 The activity is saved on the SDcard, and then imported in a dedicated Database (Out of scope).
 
 ## Code ##
