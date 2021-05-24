@@ -18,7 +18,7 @@ This Bike Speedometer tracks my cycling activies. It was made from a Arduino Esp
 ## Details ##
 
 The Arduino Esplora is connected to the bike sensor (Hall effect), to a port supporting interrupts.
-Everytime the magnet, on the wheel, goes near the bike sensor, a signal is sent the interrupt, invoking the `StepIncrement()` function.
+Everytime the magnet, on the wheel, goes near by the bike sensor, a signal is sent to the interrupt, invoking the `StepIncrement()` function.
 
 Every loops, controls are read and the display is refreshed, then wait for 1 second.
 
