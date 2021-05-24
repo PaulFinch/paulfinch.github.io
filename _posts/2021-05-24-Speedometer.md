@@ -31,11 +31,11 @@ If a SDcard is connected, the activity data is saved in a file. The name of the 
 
 ## Controls ##
 
-- **BUTTON LEFT:** Toggle Display (NOW / AVG)
-- **BUTTON RIGHT:** Toggle Time Display (Elapsed / Remaining)
-- **BUTTON BOTTOM:** Reset Counters
-- **BUTTON TOP:** Start / Pause
-- **SLIDER:** Set Difficulty
+- **BUTTON LEFT:**	Toggle Display (NOW / AVG)
+- **BUTTON RIGHT:**	Toggle Time Display (Elapsed / Remaining)
+- **BUTTON BOTTOM:**	Reset Counters
+- **BUTTON TOP:**	Start / Pause
+- **SLIDER:**		Set Difficulty
 
 ![Speedometer]({{ site.url }}/assets/{{ folder }}/Images/Speedometer.jpg)
 
