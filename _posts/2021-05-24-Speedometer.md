@@ -22,20 +22,20 @@ Everytime the magnet, on the wheel, goes near the bike sensor, a signal is sent 
 
 Every loops, controls are read and the display is refreshed, then wait for 1 second.
 
-Timer1: Every seconds, the program recalculates the traveled distance from the steps count.
+**Timer1:** Every seconds, the program recalculates the traveled distance from the steps count.
 For this, the `#define WHEEL` constant needs to be set as the wheel circumference.
 
-Timer2: Every 10 seconds, the program recalculates the current and average speed from the distance traveled
+**Timer2:** Every 10 seconds, the program recalculates the current and average speed from the distance traveled
 If a SDcard is connectd, the activity data is saved in a text file on it.
 
 ## Controls ##
 
-- BUTTON LEFT: Toggle Display (NOW / AVG)
-- BUTTON RIGHT: Toggle Time Display (Elapsed / Remaining from 60 minutes)
-- BUTTON BOTTOM: Reset Counters
-- BUTTON TOP: Start / Pause
+- **BUTTON LEFT:** Toggle Display (NOW / AVG)
+- **BUTTON RIGHT:** Toggle Time Display (Elapsed / Remaining from 60 minutes)
+- **BUTTON BOTTOM:** Reset Counters
+- **BUTTON TOP:** Start / Pause
 
-- SLIDER: Set Difficulty
+- **SLIDER:** Set Difficulty
 
 ![Speedometer]({{ site.url }}/assets/{{ folder }}/Images/Speedometer.jpg)
 
