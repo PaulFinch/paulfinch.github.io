@@ -42,7 +42,7 @@ If a SDcard is connected, the activity data is saved in a file. The name of the 
 - Elapsed Time / Remaining Time
 - Difficulty
 
-Red Spot: SDcard Recording
+**Red Spot**: SDcard Recording
 
 ## Controls ##
 
