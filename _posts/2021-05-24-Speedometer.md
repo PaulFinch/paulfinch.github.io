@@ -29,6 +29,21 @@ If a SDcard is connected, the activity data is saved in a file. The name of the 
 
 - **Every loops:** Controls are read and the display is refreshed.
 
+## Display ##
+### NOW ###
+- Speed (km/h)
+- Step speed (steps/minute)
+- Distance (km)
+- Difficulty
+
+### AVG ###
+- Average Speed (km/h)
+- Average Step speed (steps/minute)
+- Elapsed Time / Remaining Time
+- Difficulty
+
+Red Spot: SDcard Recording
+
 ## Controls ##
 
 - **BUTTON LEFT:**	Toggle Display (NOW / AVG)
