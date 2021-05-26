@@ -30,6 +30,9 @@ If a SDcard is connected, the activity data is saved in a file. The name of the 
 - **Every loops:** Controls are read and the display is refreshed.
 
 ## Display ##
+
+![Speedometer]({{ site.url }}/assets/{{ folder }}/Images/Speedometer2.jpg)
+
 ### NOW ###
 - Speed (km/h)
 - Step speed (steps/minute)
