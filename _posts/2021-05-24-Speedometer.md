@@ -36,7 +36,7 @@ If a SDcard is connected, the activity data is saved in a file. The name of the 
 ### NOW ###
 - Speed (km/h)
 - Step speed (steps/minute)
-- Distance (km)
+- Distance (m)
 - Difficulty
 
 ### AVG ###
