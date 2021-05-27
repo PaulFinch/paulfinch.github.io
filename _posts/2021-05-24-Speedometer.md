@@ -33,19 +33,20 @@ If a SDcard is connected, the activity data is saved in a file. The name of the 
 
 ![Speedometer]({{ site.url }}/assets/{{ folder }}/Images/Speedometer2.jpg)
 
-### NOW ###
+### NOW PANEL ###
 - Speed (km/h)
 - Step speed (steps/minute)
 - Distance (m)
 - Difficulty
 
-### AVG ###
+### AVG PANEL ###
 - Average Speed (km/h)
 - Average Step speed (steps/minute)
 - Elapsed Time / Remaining Time
 - Difficulty
 
-**Red Spot:** SDcard Recording
+**Red Spot:** The Red spot indicates that a SDcard was detected.
+**LED:** The Red light indicates PAUSE status. The Green light indicates RUNNING status.
 
 ## Controls ##
 
