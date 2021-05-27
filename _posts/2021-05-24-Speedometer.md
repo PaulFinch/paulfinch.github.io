@@ -24,8 +24,9 @@ Everytime the magnet, on the wheel, goes near by the bike sensor, a signal is se
 For this, the `#define WHEEL` constant needs to be set as the wheel circumference.
 
 - **Timer2:** Every 10 seconds, the program recalculates the current and average speed from the distance traveled.
-The Time display mode is also toggled from elapsed time to remaining time (60 Minutes).
-If a SDcard is connected, the activity data is saved in a file. The name of the file is generated from a number stored in the EEPROM, and incremented at initialization.
+The display mode is toggled from AVG to NOW and elapsed time to remaining time (60 Minutes).
+If a SDcard is connected, the activity data is saved in a file. The name of the file is generated from a number stored in the EEPROM, and incremented at initialization (the filename is displayed at boot).
+The blue LED blinks once. 
 
 - **Every loops:** Controls are read and the display is refreshed.
 
@@ -55,7 +56,7 @@ If a SDcard is connected, the activity data is saved in a file. The name of the 
 - **BUTTON TOP:**	Start / Pause
 - **SLIDER:**		Set Difficulty
 
-**LED:** The Red light indicates PAUSE status. The Green light indicates RUNNING status.
+**LED:** The Red LED indicates PAUSE status. The Green LED indicates RUNNING status.
 
 ![Speedometer]({{ site.url }}/assets/{{ folder }}/Images/Speedometer.jpg)
 
