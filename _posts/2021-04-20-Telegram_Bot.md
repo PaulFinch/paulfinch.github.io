@@ -45,9 +45,9 @@ Run the script :
 
 In Telegram, talk to the Bot or invite him in a chat room, the Bot will respond to these key commands :
 
-`/send_text`
-`/send_picture`
-`/ping`
+- `/send_text`
+- `/send_picture`
+- `/ping`
 
 The Bot will also post a Meme when a Meme file is matched with a conversation word.
 
