@@ -33,9 +33,9 @@ You also need to configure the Bot commands:
 
 Memes files are regex compatible, example:
 ```
-apple.jpg               _will match apple_
-ho+u+se.jpg             _will match house, houuuuuuuuse and hooooooouse_
-h(a|o)t.jpg             _will match hat or hot_
+apple.jpg               will match apple
+ho+u+se.jpg             will match house, houuuuuuuuse and hooooooouse
+h(a|o)t.jpg             will match hat or hot
 ```
 
 ## Run the Script ##
