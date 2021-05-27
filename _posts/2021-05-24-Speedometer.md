@@ -46,7 +46,6 @@ If a SDcard is connected, the activity data is saved in a file. The name of the 
 - Difficulty
 
 **Red Spot:** The Red spot indicates that a SDcard was detected.
-**LED:** The Red light indicates PAUSE status. The Green light indicates RUNNING status.
 
 ## Controls ##
 
@@ -55,6 +54,8 @@ If a SDcard is connected, the activity data is saved in a file. The name of the 
 - **BUTTON BOTTOM:**	Reset Counters
 - **BUTTON TOP:**	Start / Pause
 - **SLIDER:**		Set Difficulty
+
+**LED:** The Red light indicates PAUSE status. The Green light indicates RUNNING status.
 
 ![Speedometer]({{ site.url }}/assets/{{ folder }}/Images/Speedometer.jpg)
 
