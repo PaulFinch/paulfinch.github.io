@@ -1,63 +1,53 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
-import random
 import os
-import datetime
+import re
 import sys
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from Bot_helpers import *
 
-def send_text(bot, update):
-    global mylines
+SCRIPTPATH = os.path.dirname(os.path.realpath(__file__))
+TOKEN = "REPLACE_WITH_YOUR_TOKEN"
 
-    for i in range(5):
-        r = random.random()
-        random.shuffle(mylines, lambda: r)
-    myline =random.choice(mylines)
-    update.message.reply_text(myline)
+def randomtext(update, context):
+    TXTDIR = SCRIPTPATH + "/Resources/Texts/"
+    if os.path.isdir(TXTDIR):
+        mytext = getrandomline(getrandomtext(TXTDIR))
+        update.message.reply_text(text=mytext, parse_mode='HTML')
 
-def send_picture(bot, update):
-    global myfiles
+def ping(update, context):
+    update.message.reply_text(text="pong", parse_mode='HTML')
 
-    for i in range(5):
-        r = random.random()
-        random.shuffle(myfiles, lambda: r)
-    myfile = random.choice(myfiles)
+def randommedia(update, context):
+    MEDIADIR = SCRIPTPATH + "/Resources/Photos/"
+    if os.path.isdir(MEDIADIR):
+        myfile = getrandommedia(MEDIADIR)
+        myfile_clean = os.path.dirname(str(myfile)).replace(MEDIADIR, "")
+        if myfile.lower().endswith('.jpg'):
+            update.effective_message.reply_photo(open(myfile, 'rb'))
+        elif myfile.lower().endswith('.gif'):
+            update.effective_message.reply_document(open(myfile, 'rb'))
+        elif myfile.lower().endswith(('.mp4', '.avi')):
+            update.effective_message.reply_video(open(myfile, 'rb'))
 
-    if not os.path.isfile(myfile):
-        return
-
-    if myfile.lower().endswith('.jpg'):
-        update.message.reply_photo(open(myfile, 'rb'))
-    elif myfile.lower().endswith('.gif'):
-        update.message.reply_document(open(myfile, 'rb'))
-    elif myfile.lower().endswith(('.mp4', '.avi')):
-        update.message.reply_video(open(myfile, 'rb'))
+def checkwords(update, context):
+    MEMEDIR = SCRIPTPATH + "/Resources/Memes/"
+    wordlist = re.sub("[^\w]", " ", update.effective_message.text.lower()).split()
+    for word in wordlist:
+        for meme in getmemes(MEMEDIR):
+            regex = re.compile(r'^{}$'.format(meme[0]))
+            if regex.search(word):
+                update.effective_message.reply_photo(open(meme[1], 'rb'))
+                return
 
 if __name__ == '__main__':
 
-    scriptpath = "/data/bot/"                                           #Replace with your script location
-    if not os.path.isdir(scriptpath):
-        sys.exit(1)
-
-    linepath = scriptpath + "text.txt"                                  #The text file that will be used to get sentences from
-    if not os.path.isfile(linepath):
-        sys.exit(1)
-    mylines = open(linepath).read().splitlines()
-
-    filepath = scriptpath + "Pictures/"                                 #The folder to get the pictures from
-    if not os.path.isdir(filepath):
-        sys.exit(1)
-    myfiles = [os.path.join(root, name)
-        for root, dirs, files in os.walk(filepath)
-            for name in files
-                if name.endswith((".jpg", ".gif", ".mp4", ".avi"))]
-
-    updater = Updater("YOUR_BOT_TOKEN")
-
+    updater = Updater(TOKEN, use_context=True)
     dp = updater.dispatcher
-    dp.add_handler(CommandHandler("send_text", send_text))              #The send_text command will call the send_text function
-    dp.add_handler(CommandHandler("send_picture", send_picture))        #The send_picture command will call the send_picture function
+    dp.add_handler(CommandHandler("random_text", randomtext))
+    dp.add_handler(CommandHandler("random_picture", randommedia))
+    dp.add_handler(CommandHandler("ping", ping))
+    dp.add_handler(MessageHandler(Filters.text & ~Filters.command, checkwords))
 
     updater.start_polling()
     updater.idle()
+
+    sys.exit(0)
