@@ -1,0 +1,11 @@
+[Unit]
+Description=My Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/pathto/myExecutable
+
+[Install]
+WantedBy=multi-user.target
+

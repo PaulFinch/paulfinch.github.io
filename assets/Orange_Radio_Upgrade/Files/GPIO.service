@@ -1,0 +1,14 @@
+[Unit]
+Description=GPIO Service
+After=multi-user.target Spotifyd.service
+
+[Service]
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/var/run/dbus/my_bus_socket
+Type=idle
+ExecStart=/root/Scripts/GPIO/venv/bin/python3.7 -u /root/Scripts/GPIO/GPIO.py
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
+
