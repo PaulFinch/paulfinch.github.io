@@ -14,3 +14,6 @@ Carl Sagan
 
 > "If You Don't Make Stuff, There Is No Stuff."
 Elon Musk
+
+> “A good engineer gets stale very fast if he doesn’t keep his hands dirty.” 
+Wernher von Braun
