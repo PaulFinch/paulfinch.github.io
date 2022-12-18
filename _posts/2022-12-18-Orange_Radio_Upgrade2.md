@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Orange Radio Upgrade"
+title:  "Orange Radio Upgrade 2"
 category: projects
 image:  orange.jpg
 tags:   raspberrypi 
