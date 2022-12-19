@@ -20,7 +20,7 @@ I switched from Raspberry pi Zero 1 to Raspberry pi Zero 2.
 The **armhf-full** is directly available, no more need to compile the **armv6** version with MPRIS feature.
 
 ## Upgrade 2: GPIO Script ##
-The script now listens to specific **PropertiesChanged** dbus events (which is now implemented in Spotifyd), so more need to poll the status every n seconds.
+The script now listens to specific **PropertiesChanged** dbus events (which is now implemented in Spotifyd), so no more need to poll the status every n seconds.
 
 By the way, the new version implements a random dbus name, so I had to find the correct dbus instance with a specific regex:
 ```
