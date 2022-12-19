@@ -83,10 +83,10 @@ class GhettoBlaster:
         self.update_status()
         while self.RUN:
             time.sleep(self.DELAY_MAIN)
-        self.exit(0)
+        self.exit()
 
-    def exit(self, code):
-        self.LOGGER.info("Exit " + str(code))
+    def exit(self):
+        self.LOGGER.info("Exit")
         self.RUN = False
 
         if self.STATUS_DBUS:
@@ -103,7 +103,6 @@ class GhettoBlaster:
         GPIO.remove_event_detect(self.PIN_BTN2)
         GPIO.output(self.PIN_LED1, GPIO.LOW)
         GPIO.cleanup()
-        sys.exit(code)
 
     def signal_handler(self, signal, frame):
         self.LOGGER.info("Signal detected")
@@ -213,3 +212,4 @@ class GhettoBlaster:
 if __name__ == '__main__':
     gh = GhettoBlaster()
     gh.run()
+    sys.exit()
