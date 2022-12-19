@@ -20,13 +20,18 @@ class GhettoBlaster:
     PIN_BTN2 = 5
     PIN_LED1 = 22
     RUN = True
+
     DELAY_BLINK = 1
     DELAY_EVENT = 1
+    DELAY_STATUS = 60
+    DELAY_SVC = 60
+    DELAY_MAIN = 10
 
+    STATUS_SVC = False
     STATUS_PLAY = False
     STATUS_DBUS = False
 
-    PATTERN = re.compile("^org\.mpris\.MediaPlayer2\.spotifyd\.instance[0-9]+$")
+    SERVICES = ['Spotifyd.service']
 
     def __init__(self):
         signal.signal(signal.SIGINT, self.signal_handler)
@@ -42,8 +47,10 @@ class GhettoBlaster:
             self.LOOP = GLib.MainLoop()
             self.BUS = dbus.SystemBus(mainloop=dbus_loop)
 
+            self.SERVICE = 'org.mpris.MediaPlayer2.spotifyd'
+            pattern = re.compile("^org\.mpris\.MediaPlayer2\.spotifyd\.instance[0-9]+$")
             for service in dbus.SystemBus().list_names():
-                if self.PATTERN.match(service):
+                if pattern.match(service):
                     self.SERVICE = service
 
             self.BUS_PROXY = self.BUS.get_object(self.SERVICE, '/org/mpris/MediaPlayer2')
@@ -62,28 +69,35 @@ class GhettoBlaster:
         GPIO.add_event_detect(self.PIN_BTN1, GPIO.FALLING, bouncetime=250)
         GPIO.add_event_detect(self.PIN_BTN2, GPIO.FALLING, bouncetime=250)
 
-        self.THREAD_BLINK = threading.Thread(target=self.blink, daemon=True)
+        self.THREAD_BLINK = threading.Thread(target=self.thread_blink, daemon=True)
         self.THREAD_BLINK.start()
-        self.THREAD_EVENTS = threading.Thread(target=self.events, daemon=True)
+        self.THREAD_EVENTS = threading.Thread(target=self.thread_events, daemon=True)
         self.THREAD_EVENTS.start()
+        self.THREAD_STATUS = threading.Thread(target=self.thread_status, daemon=True)
+        self.THREAD_STATUS.start()
+        self.THREAD_SERVICE = threading.Thread(target=self.thread_service, daemon=True)
+        self.THREAD_SERVICE.start()
 
     def run(self):
         self.LOGGER.info("Running Daemon")
         self.update_status()
         while self.RUN:
-            self.LOOP.run()
+            time.sleep(self.DELAY_MAIN)
         self.exit(0)
 
     def exit(self, code):
         self.LOGGER.info("Exit " + str(code))
         self.RUN = False
 
-        self.THREAD_BLINK.join()
-        self.THREAD_EVENTS.join()
-
         if self.STATUS_DBUS:
+            self.LOOP.quit()
             self.RECEIVER.remove()
             self.BUS.close()
+
+        self.THREAD_BLINK.join()
+        self.THREAD_EVENTS.join()
+        self.THREAD_STATUS.join()
+        self.THREAD_SERVICE.join()
 
         GPIO.remove_event_detect(self.PIN_BTN1)
         GPIO.remove_event_detect(self.PIN_BTN2)
@@ -94,18 +108,19 @@ class GhettoBlaster:
     def signal_handler(self, signal, frame):
         self.LOGGER.info("Signal detected")
         self.RUN = False
-        if self.STATUS_DBUS:
-            self.LOOP.quit()
 
-    def blink(self):
+    def thread_blink(self):
         led_status = False
         last_led_status = False
 
         while self.RUN:
-            if self.STATUS_PLAY:
-                led_status = not led_status
+            if self.STATUS_SVC:
+                if self.STATUS_PLAY:
+                    led_status = not led_status
+                else:
+                    led_status = True
             else:
-                led_status = True
+                led_status = False
 
             if led_status != last_led_status:
                 if led_status:
@@ -116,7 +131,7 @@ class GhettoBlaster:
             last_led_status = led_status
             time.sleep(self.DELAY_BLINK)
 
-    def events(self):
+    def thread_events(self):
         while self.RUN:
             event1 = GPIO.event_detected(self.PIN_BTN1)
             event2 = GPIO.event_detected(self.PIN_BTN2)
@@ -132,6 +147,18 @@ class GhettoBlaster:
             event2 = False
             time.sleep(self.DELAY_EVENT)
 
+    def thread_status(self):
+        while self.RUN:
+            if self.STATUS_DBUS:
+                self.LOOP.run()
+            else:
+                time.sleep(self.DELAY_STATUS)
+
+    def thread_service(self):
+        while self.RUN:
+            self.update_service()
+            time.sleep(self.DELAY_STATUS)
+
     def control(self, action):
         self.LOGGER.info("Task [" + str(action) + "]")
         if action == 'shutdown':
@@ -146,6 +173,15 @@ class GhettoBlaster:
             self.PLAYER.Previous()
         if action == 'next':
             self.PLAYER.Next()
+
+    def update_service(self):
+        service_status = True
+        for service in self.SERVICES:
+            if int(os.system('systemctl is-active --quiet ' + str(service))) != 0:
+                self.LOGGER.error("Error: Service not running (" + str(service) + ")")
+                service_status = False
+
+        self.STATUS_SVC = service_status
 
     def update_status(self, *args):
         if self.STATUS_DBUS:
@@ -171,6 +207,7 @@ class GhettoBlaster:
                 except:
                     self.LOGGER.error("Error: Poll PlaybackStatus")
         else:
+            self.LOGGER.error("Error: Cannot Update PlaybackStatus")
             self.STATUS_PLAY = False
 
 if __name__ == '__main__':
