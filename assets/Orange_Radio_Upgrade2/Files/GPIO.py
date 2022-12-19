@@ -58,7 +58,7 @@ class GhettoBlaster:
             self.PLAYER_PROPERTIES = dbus.Interface(self.BUS_PROXY, 'org.freedesktop.DBus.Properties')
             self.RECEIVER = self.BUS.add_signal_receiver(self.update_status, signal_name='PropertiesChanged', path='/org/mpris/MediaPlayer2')
             self.STATUS_DBUS = True
-        except dbus.exceptions.DBusException:
+        except:
             self.LOGGER.error("Error: Dbus")
 
         GPIO.setwarnings(False)
@@ -161,21 +161,21 @@ class GhettoBlaster:
     def control(self, action):
         self.LOGGER.info("Task [" + str(action) + "]")
         if action == 'shutdown':
-            if self.STATUS_PLAY:
-                self.control('stop')
             subprocess.Popen('systemctl poweroff', shell=True)
         if action == 'reboot':
-            if self.STATUS_PLAY:
-                self.control('stop')
             subprocess.Popen('systemctl reboot', shell=True)
-        if action == 'play-pause':
-            self.PLAYER.PlayPause()
-        if action == 'stop':
-            self.PLAYER.Stop()
-        if action == 'previous':
-            self.PLAYER.Previous()
-        if action == 'next':
-            self.PLAYER.Next()
+        if self.STATUS_DBUS:
+            try:
+                if action == 'play-pause':
+                    self.PLAYER.PlayPause()
+                if action == 'stop' or action == 'shutdown' or action == 'reboot':
+                    self.PLAYER.Stop()
+                if action == 'previous':
+                    self.PLAYER.Previous()
+                if action == 'next':
+                    self.PLAYER.Next()
+            except:
+                self.LOGGER.error("Error: Dbus Player")
 
     def update_service(self):
         service_status = True
