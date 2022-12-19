@@ -161,8 +161,12 @@ class GhettoBlaster:
     def control(self, action):
         self.LOGGER.info("Task [" + str(action) + "]")
         if action == 'shutdown':
+            if self.STATUS_PLAY:
+                self.control('stop')
             subprocess.Popen('systemctl poweroff', shell=True)
         if action == 'reboot':
+            if self.STATUS_PLAY:
+                self.control('stop')
             subprocess.Popen('systemctl reboot', shell=True)
         if action == 'play-pause':
             self.PLAYER.PlayPause()
