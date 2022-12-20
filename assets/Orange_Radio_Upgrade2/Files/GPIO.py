@@ -29,10 +29,9 @@ class GhettoBlaster:
 
     STATUS_SVC = False
     STATUS_PLAY = False
-    STATUS_DBUS = False
 
     SERVICES = ['Spotifyd.service']
-
+    
     def __init__(self):
         signal.signal(signal.SIGINT, self.signal_handler)
         signal.signal(signal.SIGTERM, self.signal_handler)
@@ -57,7 +56,6 @@ class GhettoBlaster:
             self.PLAYER = dbus.Interface(self.BUS_PROXY, 'org.mpris.MediaPlayer2.Player')
             self.PLAYER_PROPERTIES = dbus.Interface(self.BUS_PROXY, 'org.freedesktop.DBus.Properties')
             self.RECEIVER = self.BUS.add_signal_receiver(self.update_status, signal_name='PropertiesChanged', path='/org/mpris/MediaPlayer2')
-            self.STATUS_DBUS = True
         except:
             self.LOGGER.error("Error: Dbus")
 
@@ -89,10 +87,12 @@ class GhettoBlaster:
         self.LOGGER.info("Exit")
         self.RUN = False
 
-        if self.STATUS_DBUS:
+        try:
             self.LOOP.quit()
             self.RECEIVER.remove()
             self.BUS.close()
+        except:
+            self.LOGGER.error("Error: Dbus")
 
         self.THREAD_BLINK.join()
         self.THREAD_EVENTS.join()
@@ -135,6 +135,9 @@ class GhettoBlaster:
             event1 = GPIO.event_detected(self.PIN_BTN1)
             event2 = GPIO.event_detected(self.PIN_BTN2)
 
+            if event1 or event2:
+                self.LOGGER.info("Event: B1-" + str(event1) + " B2-" + str(event2))
+            
             if event1 and event2:
                 self.control('shutdown')
             if event1 and not event2:
@@ -148,9 +151,10 @@ class GhettoBlaster:
 
     def thread_status(self):
         while self.RUN:
-            if self.STATUS_DBUS:
+            try:
                 self.LOOP.run()
-            else:
+            except:
+                self.update_status()
                 time.sleep(self.DELAY_STATUS)
 
     def thread_service(self):
@@ -161,21 +165,22 @@ class GhettoBlaster:
     def control(self, action):
         self.LOGGER.info("Task [" + str(action) + "]")
         if action == 'shutdown':
+            time.sleep(5)
             subprocess.Popen('systemctl poweroff', shell=True)
         if action == 'reboot':
+            time.sleep(5)
             subprocess.Popen('systemctl reboot', shell=True)
-        if self.STATUS_DBUS:
-            try:
-                if action == 'play-pause':
-                    self.PLAYER.PlayPause()
-                if action == 'stop' or action == 'shutdown' or action == 'reboot':
-                    self.PLAYER.Stop()
-                if action == 'previous':
-                    self.PLAYER.Previous()
-                if action == 'next':
-                    self.PLAYER.Next()
-            except:
-                self.LOGGER.error("Error: Dbus Player")
+        try:
+            if action == 'play-pause':
+                self.PLAYER.PlayPause()
+            if action == 'stop':
+                self.PLAYER.Stop()
+            if action == 'previous':
+                self.PLAYER.Previous()
+            if action == 'next':
+                self.PLAYER.Next()
+        except:
+            self.LOGGER.error("Error: Dbus Player")
 
     def update_service(self):
         service_status = True
@@ -187,31 +192,26 @@ class GhettoBlaster:
         self.STATUS_SVC = service_status
 
     def update_status(self, *args):
-        if self.STATUS_DBUS:
-            if len(args) > 0:
-                if 'PlaybackStatus' in args[1]:
-                    try:
-                        get_status = args[1].get('PlaybackStatus')
-                        self.LOGGER.info("Update Status: " + get_status + " (GET)")
-                        if get_status == 'Playing':
-                            self.STATUS_PLAY = True
-                        else:
-                            self.STATUS_PLAY = False
-                    except:
-                        self.LOGGER.error("Error: Get PlaybackStatus")
+        if len(args) > 0:
+            if 'PlaybackStatus' in args[1]:
+                get_status = args[1].get('PlaybackStatus')
+                self.LOGGER.info("Update Status: " + get_status + " (GET)")
+                if get_status == 'Playing':
+                    self.STATUS_PLAY = True
+                else:
+                    self.STATUS_PLAY = False
             else:
-                try:
-                    poll_status = self.PLAYER_PROPERTIES.Get('org.mpris.MediaPlayer2.Player', 'PlaybackStatus')
-                    self.LOGGER.info("Update Status: " + poll_status + " (POLL)")
-                    if poll_status == 'Playing':
-                        self.STATUS_PLAY = True
-                    else:
-                        self.STATUS_PLAY = False
-                except:
-                    self.LOGGER.error("Error: Poll PlaybackStatus")
+                self.LOGGER.info("Update Status: Other (GET)")
         else:
-            self.LOGGER.error("Error: Cannot Update PlaybackStatus")
-            self.STATUS_PLAY = False
+            try:
+                poll_status = self.PLAYER_PROPERTIES.Get('org.mpris.MediaPlayer2.Player', 'PlaybackStatus')
+                self.LOGGER.info("Update Status: " + poll_status + " (POLL)")
+                if poll_status == 'Playing':
+                    self.STATUS_PLAY = True
+                else:
+                    self.STATUS_PLAY = False
+            except:
+                self.LOGGER.error("Error: Poll PlaybackStatus")
 
 if __name__ == '__main__':
     gh = GhettoBlaster()
