@@ -31,7 +31,7 @@ class GhettoBlaster:
     STATUS_PLAY = False
 
     SERVICES = ['Spotifyd.service']
-    
+
     def __init__(self):
         signal.signal(signal.SIGINT, self.signal_handler)
         signal.signal(signal.SIGTERM, self.signal_handler)
