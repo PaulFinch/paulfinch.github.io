@@ -17,3 +17,6 @@ Elon Musk
 
 > “A good engineer gets stale very fast if he doesn’t keep his hands dirty.” 
 Wernher von Braun
+
+> “Everything is theoretically impossible, until it is done.” 
+Robert A. Heinlein
