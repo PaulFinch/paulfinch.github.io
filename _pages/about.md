@@ -20,3 +20,6 @@ Wernher von Braun
 
 > “Everything is theoretically impossible, until it is done.” 
 Robert A. Heinlein
+
+> “Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.” 
+Marie Curie
