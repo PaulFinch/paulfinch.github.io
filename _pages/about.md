@@ -28,3 +28,4 @@ Marie Curie
 Steve Jobs
 
 > "The greatest pleasure in life is doing what people say you cannot do."
+Walter Bagehot
