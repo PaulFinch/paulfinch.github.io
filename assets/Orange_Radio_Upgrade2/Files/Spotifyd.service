@@ -1,0 +1,13 @@
+[Unit]
+Description=A spotify playing daemon
+Documentation=https://github.com/Spotifyd/spotifyd
+Wants=sound.target network-online.target
+After=sound.target network-online.target dbus.service
+
+[Service]
+ExecStart=/root/Spotifyd/spotifyd --no-daemon --config-path /root/Spotifyd/spotifyd.conf
+Restart=always
+RestartSec=12
+
+[Install]
+WantedBy=default.target

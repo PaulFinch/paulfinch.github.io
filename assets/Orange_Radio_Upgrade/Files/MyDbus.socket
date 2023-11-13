@@ -1,0 +1,8 @@
+[Unit]
+Description=My D-Bus System Message Bus Socket
+
+[Socket]
+ListenStream=/var/run/dbus/my_bus_socket
+
+[Install]
+WantedBy=default.target

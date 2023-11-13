@@ -1,0 +1,139 @@
+[
+  
+    {
+      "title"    : "Orange Radio Upgrade2",
+      "category" : "projects",
+      "tags"     : "raspberrypi",
+      "url"      : "/projects/2022/12/18/Orange_Radio_Upgrade2/",
+      "date"     : "18 Dec, 2022"
+    } ,
+  
+    {
+      "title"    : "Bike Speedometer",
+      "category" : "projects",
+      "tags"     : "arduino",
+      "url"      : "/projects/2021/05/24/Speedometer/",
+      "date"     : "24 May, 2021"
+    } ,
+  
+    {
+      "title"    : "Telegram Bot",
+      "category" : "projects",
+      "tags"     : "python",
+      "url"      : "/projects/2021/04/20/Telegram_Bot/",
+      "date"     : "20 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "Raspilight",
+      "category" : "projects",
+      "tags"     : "raspberrypi and python",
+      "url"      : "/projects/2021/04/20/Raspilight/",
+      "date"     : "20 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "Proxy",
+      "category" : "projects",
+      "tags"     : "raspberrypi and linux",
+      "url"      : "/projects/2021/04/20/Proxy/",
+      "date"     : "20 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "Picade",
+      "category" : "reviews",
+      "tags"     : "review",
+      "url"      : "/reviews/2021/04/20/Picade/",
+      "date"     : "20 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "Orange Radio Upgrade",
+      "category" : "projects",
+      "tags"     : "raspberrypi",
+      "url"      : "/projects/2021/04/20/Orange_Radio_Upgrade/",
+      "date"     : "20 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "Orange Radio",
+      "category" : "projects",
+      "tags"     : "raspberrypi",
+      "url"      : "/projects/2021/04/20/Orange_Radio/",
+      "date"     : "20 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "Looping Jean-Emile",
+      "category" : "projects",
+      "tags"     : "arduino",
+      "url"      : "/projects/2021/04/20/Looping_Jean-Emile/",
+      "date"     : "20 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "Web URL Checker",
+      "category" : "programs",
+      "tags"     : "python",
+      "url"      : "/programs/2021/04/15/Web_URL_Checker/",
+      "date"     : "15 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "Run as a Service",
+      "category" : "tips",
+      "tags"     : "linux and raspberrypi",
+      "url"      : "/tips/2021/04/15/Run_as_a_Service/",
+      "date"     : "15 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "PreConfigure SDCard",
+      "category" : "tips",
+      "tags"     : "raspberrypi",
+      "url"      : "/tips/2021/04/15/PreConfigure_SDCard/",
+      "date"     : "15 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "Piglow Temp Checker",
+      "category" : "projects",
+      "tags"     : "raspberrypi",
+      "url"      : "/projects/2021/04/15/Piglow_Temp_Checker/",
+      "date"     : "15 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "Turing Machine",
+      "category" : "programs",
+      "tags"     : "c",
+      "url"      : "/programs/2021/04/10/Turing_Machine/",
+      "date"     : "10 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "Game Of Life",
+      "category" : "programs",
+      "tags"     : "c",
+      "url"      : "/programs/2021/04/10/Game_Of_Life/",
+      "date"     : "10 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "Binary Clock",
+      "category" : "programs",
+      "tags"     : "javascript",
+      "url"      : "/programs/2021/04/10/Binary_Clock/",
+      "date"     : "10 Apr, 2021"
+    } ,
+  
+    {
+      "title"    : "8 Queens",
+      "category" : "programs",
+      "tags"     : "c",
+      "url"      : "/programs/2021/04/10/8_Queens/",
+      "date"     : "10 Apr, 2021"
+    } 
+  
+]
