@@ -26,3 +26,5 @@ Marie Curie
 
 > “Don’t let the noise of others’ opinions drown out your own inner voice.”
 Steve Jobs
+
+> "The greatest pleasure in life is doing what people say you cannot do."
